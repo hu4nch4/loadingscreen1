@@ -12,5 +12,5 @@ changing the text
 changhing the logo
 
 
-1. go in index.html and replace the <img src=""> with your image adress
+1. go in index.html and replace the img src="" with your image adress
 2. if needed go in style.css and play with the position atributes ( top, left ) to move it as desired 
