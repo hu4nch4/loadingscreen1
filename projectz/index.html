@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loading</title>
+</head>
+<body>
+    <!-- <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="discord.html">Discord</a>
+        <a href="regulament.html">Regulament</a>
+    </nav> -->
+      <video autoplay muted loop id="myVideo">
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <div id="audio">
+        <audio controls loop autoplay hidden id="myAudio">
+            <!-- Audio is looped, plays automatically and is hidden -->
+            <source src="dtb.mp3" type="audio/mp3">
+            </audio>
+      </div>
+      <img src="https://cdn.discordapp.com/attachments/1094935308732207215/1095728588340350996/logojarve.png">
+      <h1 id="l1">Lightning</h1>
+      <h1 id="l2">Romania</h1>
+      <h1 id="space">Apasa [SPACE] pentru a opri muzica</h1>
+      
+</body>
+<script>
+  var audio = document.getElementById("myAudio");
+  window.addEventListener("keydown", function(event) {
+    if (event.code === "Space") {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  });
+</script>
+</html>
